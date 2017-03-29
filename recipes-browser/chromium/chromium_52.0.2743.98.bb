@@ -20,8 +20,8 @@ SRC_URI += "\
 SRC_URI_append_i586 = "file://x86-m32.patch"
 
 LIC_FILES_CHKSUM = "file://LICENSE;md5=0fca02217a5d49a14dfe2d11837bb34d"
-SRC_URI[md5sum] = "0fee71466e1f2dc39ed4549d04b58ee2"
-SRC_URI[sha256sum] = "c54cdc11c3324152f3d5be98dcb4eae2bda0fc9dac7dd5f9010150458d68c18c"
+SRC_URI[md5sum] = "2cd5aca4758a2df929cdca30f103c4b4"
+SRC_URI[sha256sum] = "c45eed63f7b0b2f50023212e7630b8b7d38ba4294825f57e639d2760adcd01f9"
 
 # X11 must be available for this flavor of Chromium
 python() {
