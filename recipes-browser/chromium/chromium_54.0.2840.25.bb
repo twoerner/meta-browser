@@ -16,11 +16,12 @@ SRC_URI += "\
         ${@bb.utils.contains('PACKAGECONFIG', 'component-build', 'file://component-build.gypi', '', d)} \
         ${@bb.utils.contains('PACKAGECONFIG', 'ignore-lost-context', 'file://0001-Remove-accelerated-Canvas-support-from-blacklist.patch', '', d)} \
         file://chromium/m32.patch \
+        file://chromium/remove-user.gyp-dependency.patch \
 "
 
 LIC_FILES_CHKSUM = "file://LICENSE;md5=0fca02217a5d49a14dfe2d11837bb34d"
-SRC_URI[md5sum] = "3f596ecbd6a39d5ada29f11780ec6dcf"
-SRC_URI[sha256sum] = "f038e72cbd8b7383d13c286329623fda8d6d48f45fa2d964e554b5565283ad71"
+SRC_URI[md5sum] = "f86c0a24372604ad31e5c43191c1f95b"
+SRC_URI[sha256sum] = "a4836e25d4acf1f189129d1ec954535b7fb175c8c09611a1f289d191f997ab11"
 
 # X11 must be available for this flavor of Chromium
 python() {

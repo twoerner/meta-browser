@@ -11,5 +11,6 @@
     'use_cups': 0,
     'use_gnome_keyring': 0,
     'linux_link_gnome_keyring': 0,
+    'v8_inspector': 0,
   }, 
 }

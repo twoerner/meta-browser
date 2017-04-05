@@ -1,0 +1,25 @@
+diff -ur chromium-54.0.2840.25__ORIG/content/content_browser.gypi chromium-54.0.2840.25/content/content_browser.gypi
+--- chromium-54.0.2840.25__ORIG/content/content_browser.gypi	2016-09-14 00:03:31.000000000 -0400
++++ chromium-54.0.2840.25/content/content_browser.gypi	2017-03-31 20:53:19.241496290 -0400
+@@ -41,8 +41,6 @@
+     '../services/shell/shell_public.gyp:shell_public',
+     '../services/tracing/tracing.gyp:tracing_lib',
+     '../services/tracing/tracing.gyp:tracing_public',
+-    '../services/user/user.gyp:user_service_lib',
+-    '../services/user/user.gyp:user_service_public_lib',
+     '../skia/skia.gyp:skia',
+     '../skia/skia.gyp:skia_mojo',
+     '../sql/sql.gyp:sql',
+diff -ur chromium-54.0.2840.25__ORIG/content/content.gyp chromium-54.0.2840.25/content/content.gyp
+--- chromium-54.0.2840.25__ORIG/content/content.gyp	2016-09-14 00:03:31.000000000 -0400
++++ chromium-54.0.2840.25/content/content.gyp	2017-03-31 20:53:12.141480510 -0400
+@@ -72,9 +72,6 @@
+       'includes': [
+         '../services/shell/public/service_manifest.gypi',
+       ],
+-      'dependencies': [
+-        '../services/user/user.gyp:user_app_manifest',
+-      ],
+       'hard_dependency': 1,
+     },
+     {
